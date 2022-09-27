@@ -1,0 +1,26 @@
+.header{
+    background-image: url(/imagenes/hawaii.jpg);
+    background-position: center;
+    background-size: cover;
+    filter:contrast(40%);
+    filter: blur(10px);
+    filter: saturate(80%);
+    background-color: rgba(24, 22, 22, 0.797); 
+    background-blend-mode: soft-light; 
+ }
+
+.img-logo{
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(4, 62, 72);
+    font-size: small;
+}
+body {
+    overflow-x: hidden;
+}
