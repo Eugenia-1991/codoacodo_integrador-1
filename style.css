@@ -21,6 +21,30 @@ footer{
     background-color: rgb(4, 62, 72);
     font-size: small;
 }
+
+
+
+.card:hover{
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+
+    }
+
+.descuento-e:hover{
+    transform: scale(1.8);
+    color:#0404e1 !important;;
+}
+.descuento-t:hover{
+    transform: scale(1.8);
+    color:rgb(30, 180, 222) !important;;
+}
+
+.descuento-j:hover{
+    transform: scale(1.8);
+    color:rgb(238, 192, 26) !important;;
+}
+
+  
 body {
     overflow-x: hidden;
 }
