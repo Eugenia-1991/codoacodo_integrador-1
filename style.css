@@ -4,7 +4,7 @@
     background-size: cover;
     filter:contrast(40%);
     filter: blur(10px);
-    filter: saturate(80%);
+    filter: saturate(90%);
     background-color: rgba(24, 22, 22, 0.797); 
     background-blend-mode: soft-light; 
  }
