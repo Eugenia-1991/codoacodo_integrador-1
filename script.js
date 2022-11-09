@@ -34,7 +34,7 @@ function total() {
   p.innerHTML = `Total a pagar: $ ${totalvalor}`;
 }
 
-
+//fun descuento que utilizo
 function Felicitaciones(){
   if(categoria.value == 0) {
   msj.innerHTML = "<b>¡Felicitaciones!</b> Utilizaste el descuento del 80%  de la categoria estudiante."
@@ -141,8 +141,6 @@ else if (categoria.value == 2) {
 botonDescargar.addEventListener("click", crearComprobante);
 
 
-
-//crea en una  nueva pag para descargar
 
 
 
