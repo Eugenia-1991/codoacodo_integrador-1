@@ -8,7 +8,7 @@ let descuentoEstudiante = 0.80;
 let descuentoTrainee = 0.50;
 let descuentoJunior = 0.15;
 
-//nueva
+//mensaje
 const msj =document.getElementById('mensaje');
 
 const cantidad = document.getElementById('cantidad');
@@ -48,23 +48,101 @@ function Felicitaciones(){
    else {
     msj.innerHTML = "<b>¡Upps!</b> No ingresaste ninguna categoria para acceder a los descuentos!"
         }
-        
-      
+             
+}
+//boton ELIMINAR COMPROBANTE
+const btneliminarcomp = document.getElementById('btneliminarcomp')
+
+function eliminarcard() {
+     cardContainer.innerHTML= "";
 }
 
+btneliminarcomp.addEventListener("click",eliminarcard);
+
+
+//funcion boton
 botonCalcular.addEventListener("click", Felicitaciones);
+
 
 //funcion al boton
 botonCalcular.addEventListener("click", total);
 
-// boton reset
+// boton reset /////////////////////
 botonBorrar.addEventListener('click', ()=>{
   formulario.reset()
   p.innerHTML = "Total a pagar: $"
   msj.innerHTML = "<i>Ingresa tu categoria para aplicar a los mejores <b>descuentos</b>!</i>"
-
+  
 });
 
+//nueva func
+const botonDescargar = document.getElementById('btndescargar');
+const ticket =document.getElementById('ticket');
+const datos =document.getElementById('datos');
+const nombre =document.getElementById('nombre');
+const apellido =document.getElementById('apellido')
+const catcard =document.getElementById('cat');
+const email =document.getElementById('correo')
+const totalcomprobante=document.getElementById('comptotal')
+
+
+//crea la card comprobante de la compra
+function crearComprobante(){ 
+ 
+const cardContainer = document.getElementById("cardContainer");
+
+let nombrecard = document.createElement("h5");
+nombrecard.innerHTML = nombre.value + " " + apellido.value;
+cardContainer.appendChild(nombrecard);
+
+let emailcard = document.createElement("h6");
+emailcard.innerHTML = email.value;
+cardContainer.appendChild(emailcard);
+///
+let categoriacard = document.createElement("h3");
+if (categoria.value == 0) {
+  categoriacard.innerHTML= "Estudiante";
+ } 
+else if (categoria.value == 1) {
+  categoriacard.innerHTML= "Trainee";
+}
+else if (categoria.value == 2) {
+  categoriacard.innerHTML= "Junior";
+} else{
+  categoriacard.innerHTML= "sin categoria";
+    }
+ cardContainer.appendChild(categoriacard);
+
+ let cantidadCard = document.createElement("h4")
+ cantidadCard.innerHTML= "Cantidad: " + cantidad.value;
+ cardContainer.appendChild(cantidadCard)
+ 
+
+ let totalCard = document.createElement("h4")
+ totalCard.innerHTML =  p.innerHTML
+ cardContainer.appendChild(totalCard)
+
+ let descuentoCard = document.createElement("p")
+ if (categoria.value == 0) {
+  descuentoCard.innerHTML= "Descuento aplicado: <b>80%</b>";
+ } 
+else if (categoria.value == 1) {
+  descuentoCard.innerHTML= "Descuento aplicado: <b>50%</b>";
+}
+else if (categoria.value == 2) {
+  descuentoCard.innerHTML= "Descuento aplicado: <b>15%</b>";
+} else{
+  descuentoCard.innerHTML= "No se aplico ningun descuento";
+    }
+ cardContainer.appendChild(descuentoCard);
+
+ }
+
+botonDescargar.addEventListener("click", crearComprobante);
+
+
+
+//crea en una  nueva pag para descargar
 
 
 

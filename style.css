@@ -24,7 +24,8 @@ footer{
 
 
 
-.card:hover{
+
+.card-1:hover{
     box-shadow: 5px 6px 6px 2px #e9ecef;
     transform: scale(1.1);
 
@@ -41,10 +42,62 @@ footer{
 
 .descuento-j:hover{
     transform: scale(1.8);
-    color:rgb(238, 192, 26) !important;;
+    color:rgba(224, 201, 29, 0.891) !important;;
 }
 
-  
+  .cardContainer{
+  font-family: sans-serif;
+  border: dashed;
+  border-color: rgba(17, 150, 28, 0.424) ;
+  margin-top: 30px;
+  width: 25%;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+ 
+}
+ .cardContainer p{
+   color: azure;
+   background-color:rgba(0, 154, 62, 0.862);
+   border-radius: 3px;
+   font-family: monospace;
+   font-size: medium;
+     }
+
+.cardContainer h3{
+font-weight: bold;
+font-size: medium;
+color: rgba(0, 154, 62, 0.862) ;
+ border-radius: 3px;
+}
+
+ .cardContainer h4{
+  font-size: medium;
+ color: darkgrey;  
+ border-radius: 3px;
+}
+
+ .cardContainer h5{
+    font-size: medium;
+ color: darkgrey;
+  border-radius: 3px;
+
+     }
+
+ .cardContainer h6{
+    font-size: medium;
+color: darkgrey;
+ border-radius: 3px;
+    }
+
+
+    
+
+
+
+
+
+
 body {
     overflow-x: hidden;
 }
