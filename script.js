@@ -56,15 +56,14 @@ const btneliminarcomp = document.getElementById('btneliminarcomp')
 function eliminarcard() {
      cardContainer.innerHTML= "";
 }
-
 btneliminarcomp.addEventListener("click",eliminarcard);
 
 
-//funcion boton
+//funcion boton Calcular
 botonCalcular.addEventListener("click", Felicitaciones);
 
 
-//funcion al boton
+//funcion al boton Calcular
 botonCalcular.addEventListener("click", total);
 
 // boton reset /////////////////////
